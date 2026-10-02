@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
@@ -18,7 +19,7 @@
   <div class="wrap nav-wrap">
     <a href="#" class="nav-brand" aria-label="Home">
       <!-- <span class="brand-badge">YN</span> -->
-      <span class="brand-name">NHOY.dev</span>
+      <span class="brand-name">NHOY.Tech</span>
     </a>
     
     <div class="nav-menu" id="nav-menu">
@@ -80,7 +81,7 @@
         <a class="btn o" href="#contact">Get in touch</a>
       </div>
       <p class="hint">
-        <span class="hint-icon">✨</span> Move your mouse over the android. On a phone, touch and drag.
+        <span class="hint-icon"><i class="fa-solid fa-star-of-life"></i></span> Move your mouse over the android. On a phone, touch and drag.
       </p>
     </div>
 
@@ -97,82 +98,68 @@
         <!-- FLOATING LOGOS OVER & AROUND IMAGE -->
         <!-- 1. Figma -->
         <div class="tech-badge badge-figma" title="Figma – UI/UX & Design Systems">
-          <svg viewBox="0 0 38 57" width="16" height="24" fill="none">
-            <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" fill="#1ABCFE"/>
-            <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z" fill="#0ACF83"/>
-            <path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z" fill="#FF7262"/>
-            <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z" fill="#F24E1E"/>
-            <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z" fill="#A259FF"/>
-          </svg>
+          <div class="figma">
+            <img src="/src/assets/icon/figma.png" alt="Figma logo" width="18" height="18">
+          </div>
           <span>Figma</span>
         </div>
 
         <!-- 2. React -->
         <div class="tech-badge badge-react" title="React – Component Architecture">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#61DAFB" stroke-width="1.8">
-            <circle cx="12" cy="12" r="2.2" fill="#61DAFB"/>
-            <ellipse cx="12" cy="12" rx="10" ry="3.8"/>
-            <ellipse cx="12" cy="12" rx="10" ry="3.8" transform="rotate(60 12 12)"/>
-            <ellipse cx="12" cy="12" rx="10" ry="3.8" transform="rotate(120 12 12)"/>
-          </svg>
+         <div class="react">
+          <img src="/src/assets/icon/react.png" alt="React logo" width="18" height="18">
+         </div>
           <span>React</span>
         </div>
 
         <!-- 3. JavaScript -->
         <div class="tech-badge badge-js" title="JavaScript – Modern Interactive Web">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
-            <rect width="24" height="24" rx="4" fill="#F7DF1E"/>
-            <path d="M6.5 18.5l1.6-1c.4.7.7 1.2 1.5 1.2.7 0 1.2-.3 1.2-1.4V10h2v7.4c0 2.2-1.3 3.2-3.1 3.2-1.7 0-2.8-.9-3.2-2.1zm8.2-.3l1.6-1c.5.8 1.1 1.4 2.1 1.4.9 0 1.5-.4 1.5-1 0-.7-.5-1-1.6-1.5-1.6-.7-2.6-1.5-2.6-3.2 0-1.6 1.3-2.8 3.1-2.8 1.4 0 2.4.5 3.1 1.8l-1.5 1c-.4-.7-.8-1-1.6-1-.7 0-1.2.4-1.2.9 0 .6.4.9 1.4 1.3 1.8.8 2.8 1.5 2.8 3.3 0 1.9-1.5 3-3.4 3-1.9 0-3.1-1-3.7-2.2z" fill="#000000"/>
-          </svg>
+          <div class="js-icon">
+            <img src="/src/assets/icon/js.png" alt="JavaScript logo" width="18" height="18">
+          </div>
           <span>JavaScript</span>
         </div>
 
         <!-- 4. TypeScript -->
         <div class="tech-badge badge-ts" title="TypeScript – Typed & Scalable Logic">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
-            <rect width="24" height="24" rx="4" fill="#3178C6"/>
-            <!-- <path d="" fill="#FFFFFF"/> -->
-          </svg>
-          <span>Bootstrap</span>
+          <div class="ts-icon">
+            <img src="/src/assets/icon/typescript.png" alt="TypeScript logo" width="18" height="18">
+          </div>
+          <span>TypeScript</span>
         </div>
 
         <!-- 5. HTML5 -->
         <div class="tech-badge badge-html" title="HTML5 – Semantic Modern Markup">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
-            <path d="M3 2l1.8 17.5L12 22l7.2-2.5L21 2H3z" fill="#E44D26"/>
-            <path d="M12 3.8v16.4l5.5-1.9L19.2 3.8H12z" fill="#F16529"/>
-            <path d="M12 7.7H7.7l.3 3.3H12V7.7zm0 6.6H9.7l-.2-2h-2l.4 4.5 4.1 1.1V14.3z" fill="#EBEBEB"/>
-            <path d="M12 7.7h4.3l-.4 4.5H12V11h2.2l.2-2H12V7.7zm0 6.6v2.2l3.4-.9.2-2.5H12z" fill="#FFFFFF"/>
-          </svg>
+          <div class="html-icon">
+            <img src="/src/assets/icon/html.png" alt="HTML5 logo" width="18" height="18">
+          </div>
           <span>HTML5</span>
         </div>
 
         <!-- 6. CSS3 -->
         <div class="tech-badge badge-css" title="CSS3 – Layouts & Micro-interactions">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
-            <path d="M3 2l1.8 17.5L12 22l7.2-2.5L21 2H3z" fill="#1572B6"/>
-            <path d="M12 3.8v16.4l5.5-1.9L19.2 3.8H12z" fill="#33A9DC"/>
-            <path d="M12 7.8H7.7l.2 2.2h4.1V7.8zm0 4.4H9.7l-.2-2.2H7.5l.4 5.5 4.1 1.1v-2.2l-2-.5.2-1.7H12v0z" fill="#EBEBEB"/>
-            <path d="M12 7.8v2.2h3.9l-.2 2.2H12v2.2h2l-.2 2.2-1.8.5V19l4.1-1.1.6-7.9H12V7.8z" fill="#FFFFFF"/>
-          </svg>
+          <div class="css-icon">
+            <img src="/src/assets/icon/css.png" alt="CSS3 logo" width="18" height="18">
+          </div>
           <span>CSS3</span>
         </div>
 
         <!-- 7. Tailwind CSS -->
         <div class="tech-badge badge-tailwind" title="Tailwind CSS – Utility Design Systems">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="#38BDF8">
-            <path d="M12 6c-2.7 0-4.4 1.3-5.2 4 .9-1.3 2-1.8 3.3-1.4.8.3 1.3.8 1.9 1.4 1 1 2.2 2.1 4.7 2.1 2.7 0 4.4-1.3 5.2-4-.9 1.3-2 1.8-3.3 1.4-.8-.3-1.3-.8-1.9-1.4-1-1-2.2-2.1-4.7-2.1zm-6 6c-2.7 0-4.4 1.3-5.2 4 .9-1.3 2-1.8 3.3-1.4.8.3 1.3.8 1.9 1.4 1 1 2.2 2.1 4.7 2.1 2.7 0 4.4-1.3 5.2-4-.9 1.3-2 1.8-3.3 1.4-.8-.3-1.3-.8-1.9-1.4-1-1-2.2-2.1-4.7-2.1z"/>
-          </svg>
+          <div class="tailwind-icon">
+            <img src="/src/assets/icon/tailwindcss.png" alt="Tailwind CSS logo" width="18" height="18">
+          </div>
           <span>Tailwind</span>
         </div>
 
         <!-- 8. Git -->
         <div class="tech-badge badge-git" title="Git – Version Control & Collaboration">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
-            <path d="M12 2l3.5 3.5-1.4 1.4L12 5.8l-2.1 2.1-1.4-1.4L12 2zm0 20l-3.5-3.5 1.4-1.4L12 18.2l2.1-2.1 1.4 1.4L12 22zm10-10l-3.5-3.5-1.4 1.4L18.2 12l2.1 2.1 1.4-1.4L22 12zm-20 0l3.5 3.5 1.4-1.4L5.8 12l-2.1-2.1-1.4 1.4L2 12z" fill="#F05032"/>
-          </svg>
+          <div class="github-icon">
+            <i class="fab fa-github"></i>
+          </div>
           <span>GitHub</span>
         </div>
+        
       </div>
     </div>
   </section>
@@ -208,9 +195,9 @@
           </div>
 
           <div class="about-card-tags">
-            <span class="badge-tag">📍 Worldwide / Remote</span>
-            <span class="badge-tag">⚡ Pixel-Perfect</span>
-            <span class="badge-tag">🎨 Design Systems</span>
+            <span class="badge-tag"> Worldwide / Remote</span>
+            <span class="badge-tag"> Pixel-Perfect</span>
+            <span class="badge-tag"> Design Systems</span>
           </div>
 
           <div class="about-card-actions">
@@ -237,22 +224,30 @@
         <!-- Key Pillars Grid -->
         <div class="about-pillars">
           <div class="pillar-card">
-            <div class="pillar-icon">🎨</div>
+            <div class="pillar-icon">
+              <i class="fas fa-user"></i>
+            </div>
             <h4>User-First Empathy</h4>
             <p>Rooted in user research, wireframing, and interactive usability prototypes to solve actual customer problems.</p>
           </div>
           <div class="pillar-card">
-            <div class="pillar-icon">⚡</div>
+            <div class="pillar-icon">
+             <i class="fa-solid fa-bolt"></i>
+            </div>
             <h4>Clean & Modern Code</h4>
             <p>Semantic HTML5, accessible ARIA patterns, responsive CSS, and performant JavaScript and React.</p>
           </div>
           <div class="pillar-card">
-            <div class="pillar-icon">📱</div>
+            <div class="pillar-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
             <h4>Adaptive Across Screens</h4>
             <p>Engineered fluidly from 320px mobile viewports up to 4K ultrawide displays without layout breaks.</p>
           </div>
           <div class="pillar-card">
-            <div class="pillar-icon">🧩</div>
+            <div class="pillar-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
             <h4>Design Systems</h4>
             <p>Figma variables and tokens mapped 1:1 with code variables for rapid, consistent product iteration.</p>
           </div>
@@ -274,7 +269,7 @@
     <div class="break-grid">
       <!-- DESIGN TRACK (PAGE) -->
       <div class="break-card design-side rv">
-        <div class="break-card-badge">🎨 The Design Discipline</div>
+        <div class="break-card-badge">The Design Discipline</div>
         <h3>UX/UI Design</h3>
         <p>
           Crafting human experiences through research, intuitive user journeys, wireframing, and design tokens that scale effortlessly.
@@ -310,7 +305,7 @@
 
       <!-- DEVELOP TRACK (PAGE) -->
       <div class="break-card dev-side rv" style="--d: .15s">
-        <div class="break-card-badge">💻 The Development Craft</div>
+        <div class="break-card-badge">The Development Craft</div>
         <h3>Frontend Engineering</h3>
         <p>
           Transforming Figma artboards into fast, responsive, accessible code that feels snappy and works across all modern browsers.
@@ -390,8 +385,8 @@
       <!-- Category Filter Tabs -->
       <div class="filter-tabs">
         <button class="filter-btn active" data-filter="all" onclick="filterProjects('all')">All Work (6)</button>
-        <button class="filter-btn" data-filter="design" onclick="filterProjects('design')">🎨 UI/UX Design</button>
-        <button class="filter-btn" data-filter="dev" onclick="filterProjects('dev')">💻 Frontend Dev</button>
+        <button class="filter-btn" data-filter="design" onclick="filterProjects('design')">UI/UX Design</button>
+        <button class="filter-btn" data-filter="dev" onclick="filterProjects('dev')">Frontend Dev</button>
       </div>
     </div>
 
@@ -425,7 +420,7 @@
             <span class="tech-tag">Tailwind CSS</span>
           </div>
           <div class="project-card-footer">
-            <span class="project-metric">⚡ 99/100 Lighthouse</span>
+            <span class="project-metric">99/100 Lighthouse</span>
             <div class="project-links">
               <a href="#contact" class="card-link">Live Demo ↗</a>
               <a href="#contact" class="card-link">Figma ↗</a>
@@ -462,7 +457,7 @@
             <span class="tech-tag">Prototyping</span>
           </div>
           <div class="project-card-footer">
-            <span class="project-metric">🎯 +38% Task Completion</span>
+            <span class="project-metric">+38% Task Completion</span>
             <div class="project-links">
               <a href="#contact" class="card-link">Case Study ↗</a>
               <a href="#contact" class="card-link">Figma Specs ↗</a>
@@ -499,7 +494,7 @@
             <span class="tech-tag">React</span>
           </div>
           <div class="project-card-footer">
-            <span class="project-metric">🚀 0.4s Sub-Second LCP</span>
+            <span class="project-metric">0.4s Sub-Second LCP</span>
             <div class="project-links">
               <a href="#contact" class="card-link">Live Preview ↗</a>
               <a href="#contact" class="card-link">GitHub ↗</a>
@@ -536,7 +531,7 @@
             <span class="tech-tag">Motion UI</span>
           </div>
           <div class="project-card-footer">
-            <span class="project-metric">🏆 Awwwards Nominee</span>
+            <span class="project-metric">Awwwards Nominee</span>
             <div class="project-links">
               <a href="#contact" class="card-link">Figma Preview ↗</a>
             </div>
@@ -571,7 +566,7 @@
             <span class="tech-tag">CSS3 Custom Props</span>
           </div>
           <div class="project-card-footer">
-            <span class="project-metric">⚡ 60 FPS Real-time Sync</span>
+            <span class="project-metric">60 FPS Real-time Sync</span>
             <div class="project-links">
               <a href="#contact" class="card-link">Try Tool ↗</a>
               <a href="#contact" class="card-link">GitHub ↗</a>
@@ -608,7 +603,7 @@
             <span class="tech-tag">Tailwind</span>
           </div>
           <div class="project-card-footer">
-            <span class="project-metric">♿ 100% WCAG Compliant</span>
+            <span class="project-metric">100% WCAG Compliant</span>
             <div class="project-links">
               <a href="#contact" class="card-link">Live Portal ↗</a>
               <a href="#contact" class="card-link">Figma ↗</a>
@@ -645,10 +640,10 @@
           </p>
           <div style="display: flex; flex-direction: column; gap: 12px;">
             <a class="btn" style="width: 100%; justify-content: center;" href="mailto:you@example.com?subject=Project%20Inquiry">
-              ✉️ Send Email Directly
+              Send Email Directly
             </a>
             <a class="btn o" style="width: 100%; justify-content: center;" href="#work">
-              📁 Explore More Case Studies
+              Explore More Case Studies
             </a>
           </div>
         </div>

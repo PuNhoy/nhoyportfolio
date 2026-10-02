@@ -351,16 +351,16 @@ h1 {
 .stage {
   position: relative;
   aspect-ratio: 410/614;
-  width: 100%;
+  /* width: 100%; */
   cursor: crosshair;
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
-  border-radius: 24px;
-  overflow: hidden;
+  /* border-radius: 24px; */
+  /* overflow: hidden;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--line);
-  background: color-mix(in srgb, var(--ink) 4%, transparent);
+  background: color-mix(in srgb, var(--ink) 4%, transparent); */
 }
 .stage canvas {
   position: absolute;
