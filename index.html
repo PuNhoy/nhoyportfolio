@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nhoy – UX/UI Designer & Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap">
+<link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+<div id="bar"></div>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="wrap nav-wrap">
+    <a href="#" class="nav-brand" aria-label="Home">
+      <!-- <span class="brand-badge">YN</span> -->
+      <span class="brand-name">NHOY.dev</span>
+    </a>
+    
+    <div class="nav-menu" id="nav-menu">
+      <a href="#about">About</a>
+      <a href="#break-design-develop">Design vs Code</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <!-- Dark / Light Theme Toggle -->
+      <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle dark and light theme" title="Toggle theme">
+        <!-- Sun Icon (shown in dark mode) -->
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <!-- Moon Icon (shown in light mode) -->
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-btn" id="mobile-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap">
+  <!-- HERO SECTION -->
+  <section class="hero" style="border-top: none;">
+    <div>
+      <p class="hi">Hi, I'm Nhoy. I'm a</p>
+      <h1>
+        <span class="roles">
+          <span class="r1">UX/UI Designer</span>
+          <span class="r2">Frontend Developer</span>
+        </span>
+      </h1>
+      <p class="lead">
+        I design interfaces that are delightfully intuitive, then engineer them with modern web standards so they feel lightning fast on every screen.
+      </p>
+      <div class="btns">
+        <a class="btn" href="#work">See my work</a>
+        <a class="btn o" href="#break-design-develop">Design vs Code</a>
+        <a class="btn o" href="#contact">Get in touch</a>
+      </div>
+      <p class="hint">
+        <span class="hint-icon">✨</span> Move your mouse over the android. On a phone, touch and drag.
+      </p>
+    </div>
+
+    <!-- HERO VISUAL: INTERACTIVE CANVAS WITH FLOATING TECH LOGOS -->
+    <div class="hero-visual">
+      <div class="stage-wrap">
+        <!-- Interactive Stage -->
+        <div class="stage" id="stage">
+          <canvas id="cv" role="img" aria-label="Interactive Android portrait. Hover or touch to reveal the human creator behind it."></canvas>
+          <img class="src" id="human" alt="Photo portrait" src="/src/assets/image/me.png">
+          <img class="src" id="robot" alt="Android robot portrait" src="/src/assets/image/android.png">
+        </div>
+
+        <!-- FLOATING LOGOS OVER & AROUND IMAGE -->
+        <!-- 1. Figma -->
+        <div class="tech-badge badge-figma" title="Figma – UI/UX & Design Systems">
+          <svg viewBox="0 0 38 57" width="16" height="24" fill="none">
+            <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" fill="#1ABCFE"/>
+            <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z" fill="#0ACF83"/>
+            <path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z" fill="#FF7262"/>
+            <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z" fill="#F24E1E"/>
+            <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z" fill="#A259FF"/>
+          </svg>
+          <span>Figma</span>
+        </div>
+
+        <!-- 2. React -->
+        <div class="tech-badge badge-react" title="React – Component Architecture">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#61DAFB" stroke-width="1.8">
+            <circle cx="12" cy="12" r="2.2" fill="#61DAFB"/>
+            <ellipse cx="12" cy="12" rx="10" ry="3.8"/>
+            <ellipse cx="12" cy="12" rx="10" ry="3.8" transform="rotate(60 12 12)"/>
+            <ellipse cx="12" cy="12" rx="10" ry="3.8" transform="rotate(120 12 12)"/>
+          </svg>
+          <span>React</span>
+        </div>
+
+        <!-- 3. JavaScript -->
+        <div class="tech-badge badge-js" title="JavaScript – Modern Interactive Web">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+            <rect width="24" height="24" rx="4" fill="#F7DF1E"/>
+            <path d="M6.5 18.5l1.6-1c.4.7.7 1.2 1.5 1.2.7 0 1.2-.3 1.2-1.4V10h2v7.4c0 2.2-1.3 3.2-3.1 3.2-1.7 0-2.8-.9-3.2-2.1zm8.2-.3l1.6-1c.5.8 1.1 1.4 2.1 1.4.9 0 1.5-.4 1.5-1 0-.7-.5-1-1.6-1.5-1.6-.7-2.6-1.5-2.6-3.2 0-1.6 1.3-2.8 3.1-2.8 1.4 0 2.4.5 3.1 1.8l-1.5 1c-.4-.7-.8-1-1.6-1-.7 0-1.2.4-1.2.9 0 .6.4.9 1.4 1.3 1.8.8 2.8 1.5 2.8 3.3 0 1.9-1.5 3-3.4 3-1.9 0-3.1-1-3.7-2.2z" fill="#000000"/>
+          </svg>
+          <span>JavaScript</span>
+        </div>
+
+        <!-- 4. TypeScript -->
+        <div class="tech-badge badge-ts" title="TypeScript – Typed & Scalable Logic">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+            <rect width="24" height="24" rx="4" fill="#3178C6"/>
+            <!-- <path d="" fill="#FFFFFF"/> -->
+          </svg>
+          <span>Bootstrap</span>
+        </div>
+
+        <!-- 5. HTML5 -->
+        <div class="tech-badge badge-html" title="HTML5 – Semantic Modern Markup">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+            <path d="M3 2l1.8 17.5L12 22l7.2-2.5L21 2H3z" fill="#E44D26"/>
+            <path d="M12 3.8v16.4l5.5-1.9L19.2 3.8H12z" fill="#F16529"/>
+            <path d="M12 7.7H7.7l.3 3.3H12V7.7zm0 6.6H9.7l-.2-2h-2l.4 4.5 4.1 1.1V14.3z" fill="#EBEBEB"/>
+            <path d="M12 7.7h4.3l-.4 4.5H12V11h2.2l.2-2H12V7.7zm0 6.6v2.2l3.4-.9.2-2.5H12z" fill="#FFFFFF"/>
+          </svg>
+          <span>HTML5</span>
+        </div>
+
+        <!-- 6. CSS3 -->
+        <div class="tech-badge badge-css" title="CSS3 – Layouts & Micro-interactions">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+            <path d="M3 2l1.8 17.5L12 22l7.2-2.5L21 2H3z" fill="#1572B6"/>
+            <path d="M12 3.8v16.4l5.5-1.9L19.2 3.8H12z" fill="#33A9DC"/>
+            <path d="M12 7.8H7.7l.2 2.2h4.1V7.8zm0 4.4H9.7l-.2-2.2H7.5l.4 5.5 4.1 1.1v-2.2l-2-.5.2-1.7H12v0z" fill="#EBEBEB"/>
+            <path d="M12 7.8v2.2h3.9l-.2 2.2H12v2.2h2l-.2 2.2-1.8.5V19l4.1-1.1.6-7.9H12V7.8z" fill="#FFFFFF"/>
+          </svg>
+          <span>CSS3</span>
+        </div>
+
+        <!-- 7. Tailwind CSS -->
+        <div class="tech-badge badge-tailwind" title="Tailwind CSS – Utility Design Systems">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="#38BDF8">
+            <path d="M12 6c-2.7 0-4.4 1.3-5.2 4 .9-1.3 2-1.8 3.3-1.4.8.3 1.3.8 1.9 1.4 1 1 2.2 2.1 4.7 2.1 2.7 0 4.4-1.3 5.2-4-.9 1.3-2 1.8-3.3 1.4-.8-.3-1.3-.8-1.9-1.4-1-1-2.2-2.1-4.7-2.1zm-6 6c-2.7 0-4.4 1.3-5.2 4 .9-1.3 2-1.8 3.3-1.4.8.3 1.3.8 1.9 1.4 1 1 2.2 2.1 4.7 2.1 2.7 0 4.4-1.3 5.2-4-.9 1.3-2 1.8-3.3 1.4-.8-.3-1.3-.8-1.9-1.4-1-1-2.2-2.1-4.7-2.1z"/>
+          </svg>
+          <span>Tailwind</span>
+        </div>
+
+        <!-- 8. Git -->
+        <div class="tech-badge badge-git" title="Git – Version Control & Collaboration">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+            <path d="M12 2l3.5 3.5-1.4 1.4L12 5.8l-2.1 2.1-1.4-1.4L12 2zm0 20l-3.5-3.5 1.4-1.4L12 18.2l2.1-2.1 1.4 1.4L12 22zm10-10l-3.5-3.5-1.4 1.4L18.2 12l2.1 2.1 1.4-1.4L22 12zm-20 0l3.5 3.5 1.4-1.4L5.8 12l-2.1-2.1-1.4 1.4L2 12z" fill="#F05032"/>
+          </svg>
+          <span>GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION: LEFT CARD IMAGE + RIGHT TEXT SAY ABOUT ME -->
+  <section id="about">
+    <div class="about-grid">
+      <!-- Left: Profile Card with Image, Stats, Details -->
+      <div class="about-card rv">
+        <div class="about-card-img-wrap">
+          <img class="about-card-img" src="/src/assets/image/me.png" alt="Portrait photo of Your Name" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=80';">
+          <div class="about-status-pill">
+            <span class="status-dot"></span> Available for new projects
+          </div>
+        </div>
+        <div class="about-card-info">
+          <h3>Your Name</h3>
+          <p class="about-card-role">UX/UI Designer & Frontend Developer</p>
+          
+          <div class="about-stats">
+            <div class="stat-box">
+              <strong>5+</strong>
+              <span>Years Exp.</span>
+            </div>
+            <div class="stat-box">
+              <strong>40+</strong>
+              <span>Shipped Projects</span>
+            </div>
+            <div class="stat-box">
+              <strong>100%</strong>
+              <span>Client Score</span>
+            </div>
+          </div>
+
+          <div class="about-card-tags">
+            <span class="badge-tag">📍 Worldwide / Remote</span>
+            <span class="badge-tag">⚡ Pixel-Perfect</span>
+            <span class="badge-tag">🎨 Design Systems</span>
+          </div>
+
+          <div class="about-card-actions">
+            <a href="#contact" class="btn btn-sm">Let's talk</a>
+            <a href="#work" class="btn btn-sm o">View projects</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Text Say About Me -->
+      <div class="about-text rv" style="--d: .12s">
+        <span class="section-badge">About Me</span>
+        <h2>Design and code, in one head.</h2>
+        <p class="about-lead">
+          I started in visual design and keep going until I could ship exactly what I draw. That means zero friction in hand-offs, fewer surprises, and web apps that match the mockup to the exact pixel.
+        </p>
+        <p>
+          Most projects suffer from the "handoff gap"—designers draw interfaces that engineers struggle to build, or developers write code that compromises visual elegance. My mission is to bridge this gap completely. By thinking in component structures while designing in Figma, and respecting typographic rhythm and motion while coding in CSS and JavaScript, I create seamless digital products that look stunning and perform reliably.
+        </p>
+        <p>
+          Currently, I partner with forward-thinking teams, startups, and agencies worldwide to turn raw concepts into tested user flows, scalable design systems, and responsive production code.
+        </p>
+
+        <!-- Key Pillars Grid -->
+        <div class="about-pillars">
+          <div class="pillar-card">
+            <div class="pillar-icon">🎨</div>
+            <h4>User-First Empathy</h4>
+            <p>Rooted in user research, wireframing, and interactive usability prototypes to solve actual customer problems.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">⚡</div>
+            <h4>Clean & Modern Code</h4>
+            <p>Semantic HTML5, accessible ARIA patterns, responsive CSS, and performant JavaScript and React.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">📱</div>
+            <h4>Adaptive Across Screens</h4>
+            <p>Engineered fluidly from 320px mobile viewports up to 4K ultrawide displays without layout breaks.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">🧩</div>
+            <h4>Design Systems</h4>
+            <p>Figma variables and tokens mapped 1:1 with code variables for rapid, consistent product iteration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREAK BETWEEN DESIGN PAGE & DEVELOP PAGE -->
+  <section id="break-design-develop" class="break-section" style="margin: 0 -24px; padding: 100px 24px;">
+    <div class="break-header rv">
+      <span class="section-badge">The Dual Disciplines</span>
+      <h2>A Clear Division, One Cohesive Mindset</h2>
+      <p>
+        Whether you need an end-to-end design sprint in Figma or production-ready frontend code, here is how each craft is treated with dedicated mastery.
+      </p>
+    </div>
+
+    <div class="break-grid">
+      <!-- DESIGN TRACK (PAGE) -->
+      <div class="break-card design-side rv">
+        <div class="break-card-badge">🎨 The Design Discipline</div>
+        <h3>UX/UI Design</h3>
+        <p>
+          Crafting human experiences through research, intuitive user journeys, wireframing, and design tokens that scale effortlessly.
+        </p>
+        <ul class="break-list">
+          <li>
+            <span class="check-icon">✓</span>
+            User Research, Personas & Journey Mapping
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            Low & High-Fidelity Wireframes in Figma
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            Interactive Micro-interaction Prototyping
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            Design Systems & Token Architecture
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            Usability Testing & Conversion Optimization
+          </li>
+        </ul>
+        <div class="break-cta">
+          <button class="btn" style="background: #a259ff; color: #ffffff;" onclick="filterProjects('design')">
+            Browse Design Projects →
+          </button>
+        </div>
+      </div>
+
+      <!-- DEVELOP TRACK (PAGE) -->
+      <div class="break-card dev-side rv" style="--d: .15s">
+        <div class="break-card-badge">💻 The Development Craft</div>
+        <h3>Frontend Engineering</h3>
+        <p>
+          Transforming Figma artboards into fast, responsive, accessible code that feels snappy and works across all modern browsers.
+        </p>
+        <ul class="break-list">
+          <li>
+            <span class="check-icon">✓</span>
+            Clean Semantic HTML5 & Modern CSS3
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            Modern JavaScript (ES6+), React & TypeScript
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            Mobile-First Fluid & Responsive Layouts
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            WCAG 2.1 Accessibility (a11y) Standards
+          </li>
+          <li>
+            <span class="check-icon">✓</span>
+            High-Performance 60fps Animations & LCP Optimization
+          </li>
+        </ul>
+        <div class="break-cta">
+          <button class="btn" style="background: #0284c7; color: #ffffff;" onclick="filterProjects('dev')">
+            Browse Frontend Projects →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <span class="section-badge rv">Skills & Competencies</span>
+    <h2 class="rv">Two skill sets, one seamless workflow.</h2>
+    <div class="cols">
+      <div class="rv">
+        <h3>UX/UI Design</h3>
+        <p>From strategic research to a validated, high-fidelity prototype.</p>
+        <ul>
+          <li>User research & stakeholder interviews <span>Insight</span></li>
+          <li>Wireframes, task flows & site maps <span>Structure</span></li>
+          <li>Interactive prototyping in Figma <span>Fidelity</span></li>
+          <li>Multi-brand design systems & tokens <span>Scale</span></li>
+          <li>Usability testing & heuristic audit <span>Validation</span></li>
+        </ul>
+      </div>
+      <div class="rv" style="--d: .14s">
+        <h3>Frontend Development</h3>
+        <p>From design tokens to production-ready, accessible web code.</p>
+        <ul>
+          <li>HTML5, modern CSS3 & JavaScript <span>Core Web</span></li>
+          <li>React, Next.js & TypeScript <span>Frameworks</span></li>
+          <li>Tailwind CSS & CSS Grid architecture <span>Styling</span></li>
+          <li>WCAG AA/AAA Accessibility compliance <span>Inclusion</span></li>
+          <li>Performance tuning & Core Web Vitals <span>Speed</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK SECTION: RICH PROJECT CARDS WITH FILTERING -->
+  <section id="work">
+    <div class="work-header-wrap rv">
+      <div>
+        <span class="section-badge">Portfolio</span>
+        <h2>Selected Work</h2>
+        <p style="color: var(--mute); margin: 0; font-size: 1.1rem;">
+          Explore case studies across design architecture and frontend engineering.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all" onclick="filterProjects('all')">All Work (6)</button>
+        <button class="filter-btn" data-filter="design" onclick="filterProjects('design')">🎨 UI/UX Design</button>
+        <button class="filter-btn" data-filter="dev" onclick="filterProjects('dev')">💻 Frontend Dev</button>
+      </div>
+    </div>
+
+    <!-- PROJECT CARDS GRID -->
+    <div class="project-grid" id="project-grid">
+      <!-- Project 1: FinPulse -->
+      <div class="project-card rv" data-category="design dev">
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #1e3a8a, #3b82f6);"></div>
+          <div class="project-browser-mock">
+            <div class="mock-dots"><span></span><span></span><span></span></div>
+            <div class="mock-content">
+              <span class="mock-preview-tag">Analytics Dashboard</span>
+              <span class="mock-preview-title">FinPulse SaaS</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="card-meta">
+            <span class="category-pill cat-both">Design & Code</span>
+            <span class="card-year">2026</span>
+          </div>
+          <h3>FinPulse – Financial Analytics Dashboard</h3>
+          <p>
+            An enterprise-grade financial dashboard featuring 50+ Figma design tokens, translated into an ultra-fast React interface with dynamic data visualizations and dark mode.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Tailwind CSS</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-metric">⚡ 99/100 Lighthouse</span>
+            <div class="project-links">
+              <a href="#contact" class="card-link">Live Demo ↗</a>
+              <a href="#contact" class="card-link">Figma ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: NovaPay -->
+      <div class="project-card rv" data-category="design" style="--d: .1s">
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #4c1d95, #8b5cf6);"></div>
+          <div class="project-browser-mock">
+            <div class="mock-dots"><span></span><span></span><span></span></div>
+            <div class="mock-content">
+              <span class="mock-preview-tag">Mobile UX Case Study</span>
+              <span class="mock-preview-title">NovaPay Mobile</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="card-meta">
+            <span class="category-pill cat-design">UI/UX Design</span>
+            <span class="card-year">2025</span>
+          </div>
+          <h3>NovaPay – Next-Gen Neobank Mobile App</h3>
+          <p>
+            Complete end-to-end UX research, wireframing, user testing, and high-fidelity Figma prototype for an effortless mobile banking experience with peer-to-peer transfers.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">User Research</span>
+            <span class="tech-tag">Design System</span>
+            <span class="tech-tag">Prototyping</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-metric">🎯 +38% Task Completion</span>
+            <div class="project-links">
+              <a href="#contact" class="card-link">Case Study ↗</a>
+              <a href="#contact" class="card-link">Figma Specs ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: HyperStore -->
+      <div class="project-card rv" data-category="dev" style="--d: .15s">
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #065f46, #10b981);"></div>
+          <div class="project-browser-mock">
+            <div class="mock-dots"><span></span><span></span><span></span></div>
+            <div class="mock-content">
+              <span class="mock-preview-tag">Headless Storefront</span>
+              <span class="mock-preview-title">HyperStore</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="card-meta">
+            <span class="category-pill cat-dev">Frontend Build</span>
+            <span class="card-year">2026</span>
+          </div>
+          <h3>HyperStore – High-Performance E-Commerce</h3>
+          <p>
+            Built from scratch with modern frontend engineering principles. Features instantaneous page transitions, optimistic cart management, and seamless responsive checkout.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3 Grid</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">React</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-metric">🚀 0.4s Sub-Second LCP</span>
+            <div class="project-links">
+              <a href="#contact" class="card-link">Live Preview ↗</a>
+              <a href="#contact" class="card-link">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Strata Studio -->
+      <div class="project-card rv" data-category="design">
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #18181b, #52525b);"></div>
+          <div class="project-browser-mock">
+            <div class="mock-dots"><span></span><span></span><span></span></div>
+            <div class="mock-content">
+              <span class="mock-preview-tag">Editorial Portfolio</span>
+              <span class="mock-preview-title">Strata Architecture</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="card-meta">
+            <span class="category-pill cat-design">UI/UX Design</span>
+            <span class="card-year">2025</span>
+          </div>
+          <h3>Strata – Minimalist Architecture Experience</h3>
+          <p>
+            Editorial web concept for an international architecture studio. Emphasizes typographic hierarchy, spacious asymmetric grids, and elegant storytelling for project showcases.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Art Direction</span>
+            <span class="tech-tag">Design Tokens</span>
+            <span class="tech-tag">Motion UI</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-metric">🏆 Awwwards Nominee</span>
+            <div class="project-links">
+              <a href="#contact" class="card-link">Figma Preview ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: CodeSphere IDE -->
+      <div class="project-card rv" data-category="dev" style="--d: .1s">
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #78350f, #d97706);"></div>
+          <div class="project-browser-mock">
+            <div class="mock-dots"><span></span><span></span><span></span></div>
+            <div class="mock-content">
+              <span class="mock-preview-tag">Interactive Dev Tool</span>
+              <span class="mock-preview-title">CodeSphere IDE</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="card-meta">
+            <span class="category-pill cat-dev">Frontend Build</span>
+            <span class="card-year">2026</span>
+          </div>
+          <h3>CodeSphere – In-Browser Interactive Playground</h3>
+          <p>
+            A lightweight live code editor for HTML, CSS, and JavaScript. Includes instant preview compilation via Web Workers, syntax highlighting, and responsive device simulation.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tech-tag">JavaScript (ES6+)</span>
+            <span class="tech-tag">Web Workers</span>
+            <span class="tech-tag">CSS3 Custom Props</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-metric">⚡ 60 FPS Real-time Sync</span>
+            <div class="project-links">
+              <a href="#contact" class="card-link">Try Tool ↗</a>
+              <a href="#contact" class="card-link">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: HealthTrack -->
+      <div class="project-card rv" data-category="design dev" style="--d: .15s">
+        <div class="project-thumb">
+          <div class="project-thumb-bg" style="background: linear-gradient(135deg, #0f766e, #14b8a6);"></div>
+          <div class="project-browser-mock">
+            <div class="mock-dots"><span></span><span></span><span></span></div>
+            <div class="mock-content">
+              <span class="mock-preview-tag">Telehealth Platform</span>
+              <span class="mock-preview-title">HealthTrack</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="card-meta">
+            <span class="category-pill cat-both">Design & Code</span>
+            <span class="card-year">2025</span>
+          </div>
+          <h3>HealthTrack – Accessible Patient Care Portal</h3>
+          <p>
+            From doctor-patient interview synthesis to an accessible (WCAG 2.1 AAA) responsive portal with appointment scheduling, video consultations, and clear health metric graphs.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">WCAG 2.1 AAA</span>
+            <span class="tech-tag">Tailwind</span>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-metric">♿ 100% WCAG Compliant</span>
+            <div class="project-links">
+              <a href="#contact" class="card-link">Live Portal ↗</a>
+              <a href="#contact" class="card-link">Figma ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="contact-wrap">
+      <div>
+        <span class="section-badge rv">Get in Touch</span>
+        <h2 class="rv">Let's build something exceptional together.</h2>
+        <p class="rv" style="color: var(--mute); font-size: 1.15rem; max-width: 44ch;">
+          Have an upcoming project, design system to scale, or need a hybrid engineer who bridges design and frontend code? Drop me a message.
+        </p>
+        <a class="mail rv" href="mailto:nhoy.dev@gmail.com">nhoy.dev@gmail.com</a>
+        <div class="soc rv">
+          <a class="soc-btn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="soc-btn" href="#" target="_blank" rel="noopener">GitHub</a>
+          <a class="soc-btn" href="#" target="_blank" rel="noopener">Figma</a>
+          <a class="soc-btn" href="#" target="_blank" rel="noopener">Dribbble</a>
+        </div>
+      </div>
+      
+      <div class="rv" style="--d: .15s">
+        <div class="about-card" style="padding: 32px;">
+          <h3 style="font-size: 1.6rem; margin-bottom: 12px;">Quick Inquiry</h3>
+          <p style="color: var(--mute); font-size: 0.95rem; margin-bottom: 20px;">
+            Usually responds within 24 hours. Available for both contract work and full-time senior roles.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <a class="btn" style="width: 100%; justify-content: center;" href="mailto:you@example.com?subject=Project%20Inquiry">
+              ✉️ Send Email Directly
+            </a>
+            <a class="btn o" style="width: 100%; justify-content: center;" href="#work">
+              📁 Explore More Case Studies
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap footer-wrap">
+    <div>&copy; 2026 Nhoy.dev. Crafted with design precision and clean code.</div>
+    <a href="#" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- SCRIPT 1: INTERACTIVE CANVAS REVEAL HOVER (KEPT 100% FAITHFUL) -->
+<script src="src/js/script.js"></script>
+</body>
+</html>
